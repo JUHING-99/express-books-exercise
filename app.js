@@ -13,8 +13,19 @@ app.get('/all', (req, res) => {
     res.json(books[0])
   })
 
+  app.get('/last', (req, res) => {
+    res.json(books[books.length - 1])
+  })
 
 
+
+
+
+
+
+
+
+  
 app.listen(port, () => {
     console.log(`Example app listening on http://localhost:${port}`)
 });
