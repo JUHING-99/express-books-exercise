@@ -9,7 +9,9 @@ app.get('/all', (req, res) => {
     res.json(books)
   })
 
-
+  app.get('/first', (req, res) => {
+    res.json(books[0])
+  })
 
 
 
